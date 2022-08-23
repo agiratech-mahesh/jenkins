@@ -18,7 +18,6 @@ pipeline {
             sh " kubectl create -f deployment.yml "
             sh " kubectl create -f service.yml "
             sh " minikube service snap-service --url "
-            sh " minikube dashboard "
             }
             }
         }
