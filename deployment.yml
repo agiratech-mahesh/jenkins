@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node
+  labels:
+    tier: frontend
+    app: snap
+spec:
+  selector:
+    matchLabels:
+      app: node
+  replicas: 1
+  template:
+     metadata:
+       name: node
+       labels:
+         app: node
+     spec:
+       containers:
+         - name: node
+           image: maheshagiratech/mah
