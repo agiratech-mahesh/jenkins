@@ -21,4 +21,6 @@ pipeline {
             sh " minikube dashboard "
             }
             }
+        }
+}
             
