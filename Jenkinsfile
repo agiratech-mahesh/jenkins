@@ -8,6 +8,7 @@ pipeline {
             }
             stage ('build') {
                 steps {
+                sh " chmod 777 /var/run/docker.sock "
                 sh "sudo docker build -t maheshagiratech/k8s . "
                 sh "sudo docker push maheshagiratech/k8s "
                 }
