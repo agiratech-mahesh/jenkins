@@ -14,6 +14,7 @@ pipeline {
                  }
             stage ('k8s') {
             steps {
+            sh " minikube delete "
             sh " minikube start "
             sh " kubectl create -f deployment.yml "
             sh " kubectl create -f service.yml "
