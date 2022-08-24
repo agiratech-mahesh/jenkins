@@ -1,0 +1,7 @@
+If you want to run commands on the AWS EC2 Instance tool using Jenkins, this blog can help you to connect your self-hosted Jenkins with AWS EC2 Instance, using the SSH remote host plugin provided by Jenkins.
+
+Pre-requisites
+One Up & Running AWS – EC2 Instance
+One UP  & Running Jenkins Server
+AWS EC2 Public IP Address
+AWS EC2 Pem File
